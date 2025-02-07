@@ -16,7 +16,9 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     </head>
+    
 
     <body>
         <header>
@@ -62,11 +64,105 @@
              </nav>
              
         </header>
-        <main></main>
+        <main>
+            <!--slide start-->
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="First slide"
+                    ></li>
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="1"
+                        aria-label="Second slide"
+                    ></li>
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="2"
+                        aria-label="Third slide"
+                    ></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img
+                            src="assets/images/1.jpg"
+                            class="w-100 d-block"
+                            alt="First slide"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>First-Time Client Discount: </h3>
+                            <p>Offer a special rate for clients booking their first session with you.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/images/2.jpg"
+                            class="w-100 d-block"
+                            alt="Second slide"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Seasonal Discounts:</h3>
+                            <p> Offer a 10-15% discount on bookings during off-peak seasons.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="assets/images/3.jpg"
+                            class="w-100 d-block"
+                            alt="Third slide"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Social Media Promotions:</h3>
+                            <p> Run contests or giveaways on social media where participants can win a free photo session.</p>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselId"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselId"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <!--welcome start-->
+            <div class="p-5 mb-4 bg-light rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">welcome Guys</h1>
+                    <p class="col-md-12 fs-4">
+                        Ankit Photography offers stunning wedding, engagement, baby, and fashion photography. 
+                        Known for capturing timeless moments with a blend of candid shots and artistic portraits, 
+                        Ankit's work beautifully preserves cherished memories. 
+                        Whether it's a wedding day or a baby's first moments, each photo tells a unique story. 📸✨
+                    </p>
+                    <a class="btn btn-primary btn-lg" href="about.html">
+                        Know More
+                    </button>
+                </div>
+            </div>
+            
+        </main>
         <footer>
             <!-- place footer here -->
              <div class="container-fluid bg-success text-white" style= "padding: 40px 0px;">
                 <p class="text-center fs-4">
+                    
                     All & copy; right reserved @ Ankit photography
                 </p>
              </div>
