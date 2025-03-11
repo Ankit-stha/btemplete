@@ -8,6 +8,10 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <meta name="description" content="The best photography services in nepal, budget photography, wedding photographers in nepal, Fashion photographer">
+        <meta name="Keywords" content="Wildlife Photography, Ankit photography, Fashion photography, Outdoor photography">
+        <meta name="author" content="Ankit Shrestha">
+
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -17,10 +21,34 @@
             crossorigin="anonymous"
         />
         <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        <style>
+            #loader{
+                border:16px solid papayawhip;
+                border-top: 16px solid blue;
+                border-bottom: 16px solid red;
+                border-right: 16px solid green;
+                border-left: 16px solid orange;
+
+                border-radius: 50%;
+                width: 120px;
+                height: 120px;
+                animation: spin 0.2s linear infinite;
+                margin-top: 20%;
+                margin-left: 50%;
+
+            }
+            @keyframes spin{
+                0%{transform: rotate(0deg);}
+                100%{transform: rotate(360deg);}
+            }
+                        
+        </style>
     </head>
     
 
-    <body>
+    <body onload="myFunction()">
+        <div id="loader"></div>
+        <div class="animate-bottom" style="display: none;" id="myDiv">
         <header>
             <!-- place navbar here -->
              <nav
@@ -142,7 +170,7 @@
             </div>
             
             <!--welcome start-->
-            <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="p-5 mb-4 bg-dark text-center text-white rounded-3">
                 <div class="container-fluid py-5">
                     <h1 class="display-5 fw-bold">welcome Guys</h1>
                     <p class="col-md-12 fs-4">
@@ -157,7 +185,7 @@
                 </div>
             </div>
             <!-- welcome end -->
-        <div  class="container text-center py-5">
+        <div  class="bg-primary text-center rounded-5">
             <h1 class="display-5 fw-bold">we offer</h1>
             <div class="row">
                 <div class="col-md-4">
@@ -186,7 +214,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <a href="gallery.html">
-                            <img src="assets/images/girl-taking-photo-3959468_1280 (1).jpg" alt="" class="img-thumbnail">
+                            <img src="assets/images/girl-taking-photo-3959468_1280 (1).jpg"  class="img-thumbnail">
                         </a>
                     </div>
                     <div class="col-md-3">
@@ -196,12 +224,12 @@
                     </div>
                     <div class="col-md-3">
                         <a href="gallery.html">
-                         <img src="assets/images/634320-landscape-mountains-lake-748x421.jpg" alt="" class="img-thumbnail">
+                         <img src="assets/images/634320-landscape-mountains-lake-748x421.jpg" style="width: 335px;" alt="" class="">
                         </a>
                     </div>
                     <div class="col-md-3">
                         <a href="gallery.html">
-                         <img src="assets/images/images (2).jpg" alt="" class="img-thumbnail">
+                         <img src="assets/images/3.jpg" alt="" style="margin: 40px; margin-bottom: 50px;" class="img-thumbnail">
                         </a>
                     </div>
                 </div>
@@ -250,5 +278,17 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+    </div>
+    <script>
+        var myVar;
+        function myFunction(){
+            myVar=setTimeout(showpage,3000);
+        }
+        function showpage(){
+            document.getElementById("loader").style.display="none";
+            document.getElementById("myDiv").style.display="block";
+
+        }
+    </script>
     </body>
 </html>
